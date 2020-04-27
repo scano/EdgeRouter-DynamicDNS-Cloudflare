@@ -20,14 +20,11 @@ Connect to router via ssh `$ ssh admin@10.0.0.1`
 
 ```
 configure
-
 set service dns dynamic interface pppoe0 service custom-cloudflare host-name HOST-NAME
 set service dns dynamic interface pppoe0 service custom-cloudflare login CLOUDFLARE-EMAIL-ACCOUNT
 set service dns dynamic interface pppoe0 service custom-cloudflare password CLOUDFLARE-API-KEY-ACCOUNT
 set service dns dynamic interface pppoe0 service custom-cloudflare protocol cloudflare
 set service dns dynamic interface pppoe0 service custom-cloudflare options zone=ZONE
-set service dns dynamic interface pppoe0 service custom-cloudflare server api.cloudflare.com/client/v4/
-
 commit ; save
 exit
 ```
